@@ -30,11 +30,12 @@ function render(leads){
     for(let i =0; i<leads.length; i++){  
     // listItems += "<li><a target='_blank' href='"+myLeads[i]+"'>" + myLeads[i] +"</a></li>"
     listItems+= `
-    <li>
+    <li >
         <a target='_blank' href='${leads[i]}'>
         ${leads[i]}
         <a/>
-    </li>
+        <button id='${i}'>dt</button>
+        </li>
     `
     }
     /*
